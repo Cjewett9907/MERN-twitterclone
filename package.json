@@ -1,0 +1,41 @@
+{
+  "name": "chirper",
+  "version": "1.0.0",
+  "description": "A Twitter clone built with the MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "debug": "node --inspect app.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "Craig Jewett",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cjewett9907/MERN-twitterclone.git"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "bugs": {
+    "url": "https://github.com/Cjewett9907/MERN-twitterclone/issues"
+  },
+  "homepage": "https://github.com/Cjewett9907/MERN-twitterclone#readme"
+}
