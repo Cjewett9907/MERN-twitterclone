@@ -11,7 +11,9 @@ mongoose
   .then(() => console.log("Connected to MongoDB "))
   .catch(err => console.log(err));
 
-app.get("/", (req, res) => res.send("Hello Another World!!"));
+app.get("/", (req, res) => {
+  res.send("Hello Another World!!")}
+  );
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
