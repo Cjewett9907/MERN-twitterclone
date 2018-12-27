@@ -3,7 +3,7 @@ const validText = require('./valid-text');
 
 
 module.export = function validateRegisterInput() {
-  let errors = ();
+  let errors = {};
 
   data.handle = validText(data.handle) ? data.handle : ""
   data.email = validText(data.email) ? data.email : ""
@@ -30,7 +30,7 @@ module.export = function validateRegisterInput() {
     errors.password = "password is required"
   }
 
-  if (Validator.isLength(data.password), {min: 6, max: 30})) {
+  if (Validator.isLength(data.password), {min: 6, max: 30}) {
     errors.password = "Password is between 6 and 30 chars"
   }
 
